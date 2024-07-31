@@ -1,0 +1,13 @@
+{
+    "name": "voting-app-backend",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "azle": "^0.19.0",
+        "uuid": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/uuid": "^10.0.0"
+    }
+}

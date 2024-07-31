@@ -1,0 +1,39 @@
+{
+  "canisters": {
+    "voting-app-backend": {
+      "build": "npx azle voting-app-backend",
+      "candid": "src/voting-app-backend/voting-app-backend.did",
+      "gzip": true,
+      "main": "src/voting-app-backend/src/index.ts",
+      "tech_stack": {
+        "cdk": {
+          "azle": {}
+        },
+        "language": {
+          "javascript": {},
+          "typescript": {}
+        }
+      },
+      "type": "custom",
+      "wasm": ".azle/voting-app-backend/voting-app-backend.wasm"
+    },
+    "voting-app-frontend": {
+      "dependencies": [
+        "voting-app-backend"
+      ],
+      "source": [
+        "src/voting-app-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "voting-app-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
